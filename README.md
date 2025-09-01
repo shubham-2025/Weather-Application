@@ -1,4 +1,4 @@
-# 🌦️ Weather App
+# 🌦️ Weather Application
 
 A modern, elegant **Weather Application** built with **Vite + React + TypeScript**, styled using **Tailwind CSS**, and powered by the **OpenWeather API**. It features **glassmorphism** UI, **Google Places-powered city search**, **geolocation-based auto-detection**, and a clean **Redux Toolkit** state layer with typed hooks.
 
