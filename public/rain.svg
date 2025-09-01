@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4facfe"/>
+      <stop offset="100%" stop-color="#00f2fe"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff176"/>
+      <stop offset="100%" stop-color="#fbc02d"/>
+    </radialGradient>
+    <linearGradient id="cloud" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#cfd8dc"/>
+    </linearGradient>
+    <linearGradient id="rain" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4fc3f7"/>
+      <stop offset="100%" stop-color="#0288d1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Circle -->
+  <circle cx="64" cy="64" r="60" fill="url(#bg)" />
+
+  <!-- Sun -->
+  <circle cx="44" cy="44" r="18" fill="url(#sun)" filter="url(#shadow)" />
+
+  <!-- Cloud -->
+  <ellipse cx="80" cy="70" rx="28" ry="18" fill="url(#cloud)" opacity="0.95"/>
+  <ellipse cx="62" cy="74" rx="20" ry="12" fill="url(#cloud)" opacity="0.9"/>
+
+  <!-- Rain Drops -->
+  <line x1="60" y1="86" x2="60" y2="100" stroke="url(#rain)" stroke-width="4" stroke-linecap="round"/>
+  <line x1="74" y1="86" x2="74" y2="100" stroke="url(#rain)" stroke-width="4" stroke-linecap="round"/>
+  <line x1="88" y1="86" x2="88" y2="100" stroke="url(#rain)" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Subtle shadow -->
+  <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+    <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.25"/>
+  </filter>
+</svg>
