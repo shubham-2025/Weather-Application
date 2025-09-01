@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@import "tailwindcss";
+
+:root {
+  --gradient-1: #ffffff34;
+  --text-1: #ffffff;
+  --text-2: #374151;
+  --bg-color: #000000;
+}
+
+body {
+  /* font-family: "Roboto Mono", serif; */
+  font-family: "Inter", serif;
+  transition: background-image 0.5s ease-in-out;
+  min-height: 100dvh;
+  background-color: var(--bg-color);
+}
+
+.bg {
+  background-image: url("/background.png");
+  transition: background-image 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #2b2b2b3b;
+}
+
+.weather-sunny {
+  --gradient-1: radial-gradient(
+    at top left,
+    rgba(7, 42, 92, 0.71),
+    rgba(9, 42, 141, 0.4),
+    rgba(22, 87, 177, 0.597),
+    transparent
+  );
+  --text-1: #ffffff;
+  --text-2: #00ff2a;
+}
+.weather-night {
+  --gradient-1: radial-gradient(
+    at top left,
+    rgba(64, 31, 86, 0.412),
+    rgba(162, 125, 244, 0.241),
+    rgba(70, 43, 43, 0.4),
+    transparent
+  );
+  --text-1: #ffffff;
+  --text-2: #de7bfc;
+}
+.weather-rainy {
+  --gradient-1: radial-gradient(
+    at top left,
+    rgba(66, 142, 255, 0.245),
+    rgba(125, 169, 244, 0.523),
+    rgba(92, 116, 150, 0.445),
+    transparent
+  );
+  --text-1: #ffffff;
+  --text-2: #25cb28;
+}
+.weather-misty {
+  --gradient-1: radial-gradient(
+    at top left,
+    rgba(62, 82, 63, 0.245),
+    rgba(75, 56, 26, 0.379),
+    rgba(52, 64, 80, 0.445),
+    transparent
+  );
+  --text-1: #ffffff;
+  --text-2: #fe9538;
+}
+.weather-cloudy {
+  --gradient-1: radial-gradient(
+    at top left,
+    rgba(66, 142, 255, 0.245),
+    rgba(125, 169, 244, 0.523),
+    rgba(69, 106, 158, 0.551),
+    transparent
+  );
+  --text-1: #ffffff;
+  --text-2: #a6edf2;
+}
+.weather-snowy {
+  --gradient-1: radial-gradient(
+    at top left,
+    rgba(98, 102, 108, 0.245),
+    rgba(78, 91, 112, 0.523),
+    rgba(119, 119, 119, 0.551),
+    transparent
+  );
+  --text-1: #000000;
+  --text-2: #383434;
+}

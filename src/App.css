@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+/* body {
+  background-image: url("/background.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+} */
+
+main {
+  padding: 2rem;
+  padding-left: 19rem;
+  color: var(--text-1);
+}
+
+@media screen and (max-width: 767px) {
+  main {
+    padding-left: 2rem;
+  }
+}
+
+.sidebar {
+  background: #9393936c;
+  backdrop-filter: blur(10px);
+}
+
+.sidebar .s {
+  background-color: #ddf5ffb1;
+}
+
+.card {
+  background: var(--gradient-1);
+  backdrop-filter: blur(10px);
+  border: 2px solid #79797978;
+  @apply rounded-xl;
+}
+
+.tp-card {
+  background: #cac9ff6c;
+  backdrop-filter: blur(10px);
+  @apply rounded-xl;
+}
+
+.f-card {
+  text-align: center;
+  border: 2px solid #ffffff6c;
+  background-color: #759cff4d;
+  @apply rounded-lg;
+}
+
+td {
+  padding-block: 0.2rem;
+  padding-inline: 0.5rem;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 80px;
+  aspect-ratio: 1;
+  --c: #8d7958 98%, #0000;
+  background: radial-gradient(50% 70% at 50% 120%, var(--c)) top,
+    radial-gradient(70% 50% at -20% 50%, var(--c)) right,
+    radial-gradient(50% 70% at 50% -20%, var(--c)) bottom,
+    radial-gradient(70% 50% at 120% 50%, var(--c)) left;
+  background-size: 100% 50.1%, 50.1% 100%;
+  background-repeat: no-repeat;
+  mask: radial-gradient(circle 5px, #0000 90%, #000);
+  -webkit-mask: radial-gradient(circle 5px, #0000 90%, #000);
+  animation: l9 1.5s infinite linear;
+}
+@keyframes l9 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
